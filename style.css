@@ -111,6 +111,17 @@
       text-align: center;
     }
   }
-  
-  
-  
+  .leaflet-popup-content {
+  color: #241818;
+  font-size: 0.95rem;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #222;
+  border-radius: 8px;
+}
+
+.leaflet-popup-tip {
+  background: #222;
+}
+
