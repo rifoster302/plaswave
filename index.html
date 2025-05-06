@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PlasWave Beta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Clean Leaflet CSS (no integrity, no crossorigin) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+</head>
+<body>
+  <header>
+    <img src="assets/PlasWave Logo.png" alt="PlasmaPal Logo" class="logo" />
+    <h1>PlasWave Beta</h1>
+  </header>       
+
+  <section id="controls">
+    <label for="filter">💰 Filter by incentive:</label>
+    <select id="filter">
+      <option value="0">All centers</option>
+      <option value="100">At least $100</option>
+      <option value="500">At least $500</option>
+      <option value="900">At least $900</option>
+    </select>
+  </section>
+
+  <main>
+    <div id="map"></div>
+  </main>
+
+  <footer>
+    <p>💡 PlasWave is an independent project, not currently affiliated with any health agency. For official eligibility & health info, visit the center websites.</p>
+  </footer>
+
+  <!-- ✅ Clean Leaflet JS (no integrity, no crossorigin) -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  ></script>
+  <script src="script.js"></script>
+</body>
+</html>

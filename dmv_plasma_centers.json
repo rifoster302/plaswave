@@ -1,0 +1,43 @@
+[
+    {
+      "name": "CSL Plasma - District Heights",
+      "address": "3302 Walters Ln, District Heights, MD 20747",
+      "lat": 38.8453,
+      "lon": -76.8870,
+      "incentive": "Up to $700 first month",
+      "signup": "https://www.cslplasma.com/center/210"
+    },
+    {
+      "name": "Octapharma Plasma - Hyattsville",
+      "address": "8050 New Hampshire Ave, Hyattsville, MD 20783",
+      "lat": 38.9816,
+      "lon": -76.9814,
+      "incentive": "Up to $900 first month",
+      "signup": "https://www.octapharmaplasma.com/plasma-centers/washington-dc/"
+    },
+    {
+      "name": "Octapharma Plasma - Forestville",
+      "address": "7730 Marlboro Pike, Forestville, MD 20747",
+      "lat": 38.8475,
+      "lon": -76.8733,
+      "incentive": "Up to $900 first month",
+      "signup": "https://www.octapharmaplasma.com/plasma-centers/washington-dc/"
+    },
+    {
+      "name": "Octapharma Plasma - Riverdale",
+      "address": "6806 Riverdale Rd, Riverdale, MD 20737",
+      "lat": 38.9630,
+      "lon": -76.9100,
+      "incentive": "Up to $900 first month",
+      "signup": "https://www.octapharmaplasma.com/plasma-centers/washington-dc/"
+    },
+    {
+      "name": "American Red Cross - Dr. Charles Drew Center",
+      "address": "1730 E Street NW, Washington, DC 20006",
+      "lat": 38.8946,
+      "lon": -77.0416,
+      "incentive": "Volunteer donation (no payment)",
+      "signup": "https://www.redcrossblood.org/local-homepage/location/washington-d-c--american-red-cross.html"
+    }
+  ]
+  
