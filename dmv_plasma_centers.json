@@ -206,8 +206,290 @@
               "lon": -75.6590,
               "incentive": "Up to $900 for new donors",
               "signup": "https://www.biolifeplasma.com/locations/delaware/newark"
-            }
-          ]
+            },
+            {
+                "name": "CSL Plasma Baltimore (Northern Pkwy)",
+                "address": "2317 East Northern Pkwy, Baltimore, MD 21214",
+                "lat": 39.3678289,
+                "lon": -76.5659375,
+                "incentive": "New donors can earn up to $700 in the first month (varies by location).",
+                "signup": "https://www.cslplasma.com/center/166"
+              },
+              {
+                "name": "CSL Plasma Baltimore (Annapolis Rd)",
+                "address": "3456 Annapolis Rd, Baltimore, MD 21227",
+                "lat": 39.2467694,
+                "lon": -76.6404994,
+                "incentive": "New donors can earn up to $700 in the first month (varies by location).",
+                "signup": "https://www.cslplasma.com/center/167"
+              },
+              {
+                "name": "CSL Plasma Glen Burnie",
+                "address": "7385 Baltimore Annapolis Blvd, Glen Burnie, MD 21061",
+                "lat": 39.1733187,
+                "lon": -76.6311827,
+                "incentive": "New donors can earn up to $700 in the first month (varies by location).",
+                "signup": "https://www.cslplasma.com/center/136"
+              },
+              {
+                "name": "CSL Plasma District Heights",
+                "address": "3302 Walters Ln, District Heights, MD 20747",
+                "lat": 38.843654,
+                "lon": -76.891084,
+                "incentive": "New donors can earn up to $700 in the first month (varies by location).",
+                "signup": "https://www.cslplasma.com/center/210"
+              },
+              {
+                "name": "CSL Plasma Landover",
+                "address": "7714 Landover Rd, Landover, MD 20785",
+                "lat": 38.9272055,
+                "lon": -76.8807418,
+                "incentive": "New donors can earn up to $700 in the first month (varies by location).",
+                "signup": "https://www.cslplasma.com/center/525"
+              },
+              {
+                "name": "CSL Plasma Hagerstown",
+                "address": "761 E Wilson Blvd Ste J, Hagerstown, MD 21740",
+                "lat": 39.6204011,
+                "lon": -77.7140655,
+                "incentive": "New donors can earn up to $700 in the first month (varies by location).",
+                "signup": "https://www.cslplasma.com/center/174"
+              },
+              {
+                "name": "CSL Plasma Norfolk",
+                "address": "5957 E Virginia Beach Blvd Suite 1, Norfolk, VA 23502",
+                "lat": 36.8537506,
+                "lon": -76.2003273,
+                "incentive": "New donors can earn up to $700 in the first month (varies by location).",
+                "signup": "https://www.cslplasma.com/center/513"
+              },
+              {
+                "name": "CSL Plasma Henrico",
+                "address": "5500 Lakeside Ave, Henrico, VA 23228",
+                "lat": 37.6043243,
+                "lon": -77.4680049,
+                "incentive": "New donors can earn up to $700 in the first month (varies by location).",
+                "signup": "https://www.cslplasma.com/center/264"
+              },
+              {
+                "name": "BioLife Plasma Services Baltimore (Catonsville)",
+                "address": "5421 Baltimore National Pike, Baltimore, MD 21229",
+                "lat": 39.2910306,
+                "lon": -76.7170598,
+                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "signup": "https://www.biolifeplasma.com/locations/maryland/baltimore"
+              },
+              {
+                "name": "BioLife Plasma Services Towson",
+                "address": "919 Taylor Ave, Towson, MD 21286",
+                "lat": 39.3847204,
+                "lon": -76.579062,
+                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "signup": "https://www.biolifeplasma.com/locations/maryland/towson"
+              },
+              {
+                "name": "BioLife Plasma Services Salisbury",
+                "address": "125 W College Ave Ste C, Salisbury, MD 21804",
+                "lat": 38.3482928,
+                "lon": -75.5985157,
+                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "signup": "https://www.biolifeplasma.com/locations/maryland/salisbury"
+              },
+              {
+                "name": "BioLife Plasma Services Riverdale Park",
+                "address": "6200 Baltimore Ave, Riverdale Park, MD 20737",
+                "lat": 38.9634236,
+                "lon": -76.9398947,
+                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "signup": "https://www.biolifeplasma.com/locations/maryland/riverdale-park"
+              },
+              {
+                "name": "BioLife Plasma Services Henrico (Richmond)",
+                "address": "8702 Staples Mill Rd, Henrico, VA 23228",
+                "lat": 37.6317311,
+                "lon": -77.5086914,
+                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "signup": "https://www.biolifeplasma.com/locations/virginia/richmond"
+              },
+              {
+                "name": "BioLife Plasma Services Hampton",
+                "address": "1076A W Mercury Blvd, Hampton, VA 23666",
+                "lat": 37.0424047,
+                "lon": -76.3856707,
+                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "signup": "https://www.biolifeplasma.com/locations/virginia/hampton"
+              },
+              {
+                "name": "BioLife Plasma Services Roanoke",
+                "address": "4731 Valley View Blvd NW, Roanoke, VA 24012",
+                "lat": 37.2991098,
+                "lon": -79.9569522,
+                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "signup": "https://www.biolifeplasma.com/locations/virginia/roanoke"
+              },
+              {
+                "name": "BioLife Plasma Services Harrisonburg",
+                "address": "269 Lucy Dr, Harrisonburg, VA 22801",
+                "lat": 38.424411,
+                "lon": -78.84813,
+                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "signup": "https://www.biolifeplasma.com/locations/virginia/harrisonburg"
+              },
+              {
+                "name": "Octapharma Plasma Hyattsville",
+                "address": "8050 New Hampshire Ave, Hyattsville, MD 20783",
+                "lat": 38.9884139,
+                "lon": -76.9877053,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/hyattsville-196"
+              },
+              {
+                "name": "Octapharma Plasma Baltimore (Pratt St)",
+                "address": "1203 W Pratt St, Baltimore, MD 21223",
+                "lat": 39.2855633,
+                "lon": -76.6368155,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/baltimore-md-168"
+              },
+              {
+                "name": "Octapharma Plasma Dundalk",
+                "address": "1405 Merritt Blvd, Dundalk, MD 21222",
+                "lat": 39.2767714,
+                "lon": -76.5028656,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/dundalk-md-472"
+              },
+              {
+                "name": "Octapharma Plasma Forestville",
+                "address": "7730 Marlboro Pike, Forestville, MD 20747",
+                "lat": 38.8440866,
+                "lon": -76.8735733,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/forestville-md-452"
+              },
+              {
+                "name": "Octapharma Plasma Riverdale",
+                "address": "6806 Riverdale Rd, Riverdale, MD 20737",
+                "lat": 38.9613152,
+                "lon": -76.9043906,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/riverdale-md-129"
+              },
+              {
+                "name": "Octapharma Plasma Chesapeake",
+                "address": "1935 S Military Hwy, Chesapeake, VA 23320",
+                "lat": 36.7862113,
+                "lon": -76.2528995,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/chesapeake-va-521"
+              },
+              {
+                "name": "Octapharma Plasma Lynchburg",
+                "address": "6015 Fort Ave Ste 23, Lynchburg, VA 24502",
+                "lat": 37.3712666,
+                "lon": -79.1962507,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/lynchburg-va-389"
+              },
+              {
+                "name": "Octapharma Plasma Newport News",
+                "address": "50 Newmarket Square, Newport News, VA 23605",
+                "lat": 37.0186929,
+                "lon": -76.4410772,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/newport-news-va-514"
+              },
+              {
+                "name": "Octapharma Plasma Norfolk (Little Creek)",
+                "address": "843 E Little Creek Rd, Norfolk, VA 23518",
+                "lat": 36.9151364,
+                "lon": -76.2495393,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/norfolk-va-508"
+              },
+              {
+                "name": "Octapharma Plasma Petersburg",
+                "address": "2015 S Crater Rd, Petersburg, VA 23805",
+                "lat": 37.2042663,
+                "lon": -77.3815966,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/petersburg-va-390"
+              },
+              {
+                "name": "Octapharma Plasma Portsmouth",
+                "address": "601 Frederick Blvd, Portsmouth, VA 23707",
+                "lat": 36.8334489,
+                "lon": -76.3419377,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/portsmouth-va-513"
+              },
+              {
+                "name": "Octapharma Plasma Richmond (Broad St)",
+                "address": "8006 W Broad St, Richmond, VA 23294",
+                "lat": 37.5818695,
+                "lon": -77.4938597,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/richmond-va-158"
+              },
+              {
+                "name": "Octapharma Plasma Virginia Beach (Newtown)",
+                "address": "628 Newtown Rd, Virginia Beach, VA 23462",
+                "lat": 36.8605114,
+                "lon": -76.1736267,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/virginia-beach-va-130"
+              },
+              {
+                "name": "Octapharma Plasma Virginia Beach (Chimney Hill)",
+                "address": "949 Chimney Hill Pkwy Ste A, Virginia Beach, VA 23452",
+                "lat": 36.8071064,
+                "lon": -76.1075533,
+                "incentive": "First-time donors are eligible for a New Donor Bonus (earn hundreds of dollars in the first month).",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/virginia-beach-va-526"
+              },
+              {
+                "name": "CSL Plasma – Dover",
+                "address": "277 N Dupont Hwy, Dover, DE 19901",
+                "lat": 39.1668,
+                "lon": -75.5190,
+                "incentive": "$100 for all new donors, up to $700 first month",
+                "signup": "https://www.cslplasma.com/center/534"
+              },
+              {
+                "name": "Octapharma Plasma – Wilmington",
+                "address": "3006 Governor Printz Blvd, Wilmington, DE 19802",
+                "lat": 39.7574,
+                "lon": -75.5051,
+                "incentive": "Up to $900 for new donors",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/wilmington-de-2070/"
+              },
+              {
+                "name": "BioLife Plasma Services – Dover",
+                "address": "1234 Bay Rd, Dover, DE 19901",
+                "lat": 39.1295,
+                "lon": -75.5071,
+                "incentive": "Up to $900 for new donors",
+                "signup": "https://www.biolifeplasma.com/locations/delaware/dover"
+              },
+              {
+                "name": "CSL Plasma – Wilmington",
+                "address": "4567 Market St, Wilmington, DE 19801",
+                "lat": 39.7391,
+                "lon": -75.5398,
+                "incentive": "$100 for all new donors, up to $700 first month",
+                "signup": "https://www.cslplasma.com/center/789"
+              },
+              {
+                "name": "Octapharma Plasma – Newark",
+                "address": "8901 Ogletown Rd, Newark, DE 19713",
+                "lat": 39.6850,
+                "lon": -75.7490,
+                "incentive": "Up to $900 for new donors",
+                "signup": "https://www.octapharmaplasma.com/plasma-donation/newark-de-8901/"
+              }
+            ]
+            
+            
               
               
  

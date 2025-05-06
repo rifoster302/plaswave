@@ -1,58 +1,51 @@
 let plasmaData = [];
 let centerMarkers = [];
 
+// === Initialize Leaflet map ===
 const map = L.map('map').setView([38.89511, -77.03637], 11);
 
-// Add tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);  
-  
-// === Location Permission Modal ===
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// === Ask for Geolocation Permission ===
 setTimeout(() => {
-  if (confirm("🔍 PlasWave would like to access your device’s location to help you find the closest plasma donation centers. Do you want to allow this?")) {
+  if (confirm("🔍 PlasWave would like to access your location to show nearby plasma centers. Allow?")) {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
-        position => {
-          const userLat = position.coords.latitude;
-          const userLon = position.coords.longitude;
+        pos => {
+          const userLat = pos.coords.latitude;
+          const userLon = pos.coords.longitude;
+
           map.setView([userLat, userLon], 12);
 
-          // Add a subtle user marker
-          const userMarker = L.circleMarker([userLat, userLon], {
+          L.circleMarker([userLat, userLon], {
             radius: 6,
             fillColor: "#f4f4f4",
             color: "#0e2e1e",
             weight: 2,
-            opacity: 1,
             fillOpacity: 0.9
           }).addTo(map).bindPopup("📍 You are here");
         },
-        error => {
-          console.warn("Geolocation denied or failed. Falling back to IP or default.");
-        },
-        {
-          enableHighAccuracy: true,
-          timeout: 10000,
-          maximumAge: 300000
-        }
+        err => console.warn("Geolocation failed:", err),
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 300000 }
       );
     }
   }
-}, 500); // Delay slightly after load
+}, 500);
 
-// === Optional fallback: auto-center via IP (not precise) ===
-fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE")
-  .then(res => res.json())
-  .then(location => {
-    const [lat, lon] = location.loc.split(',');
-    map.setView([parseFloat(lat), parseFloat(lon)], 11);
-  })
-  .catch(() => {
-    console.warn("Falling back to DC center");
-  });
+// === Optional IP fallback (commented out to avoid 403 error unless token provided) ===
+// fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE")
+//   .then(res => res.json())
+//   .then(location => {
+//     const [lat, lon] = location.loc.split(',');
+//     map.setView([parseFloat(lat), parseFloat(lon)], 11);
+//   })
+//   .catch(() => {
+//     console.warn("IP geolocation failed, using DC default.");
+//   });
 
-// === Custom green pin icon ===
+// === Custom Pin ===
 const customGreenPin = L.icon({
   iconUrl: 'assets/phthalo-pin-glow.png',
   iconSize: [30, 45],
@@ -62,7 +55,7 @@ const customGreenPin = L.icon({
   shadowSize: [41, 41]
 });
 
-// === Load JSON data ===
+// === Load Center Data ===
 fetch("dmv_plasma_centers.json")
   .then(response => response.json())
   .then(data => {
@@ -73,7 +66,7 @@ fetch("dmv_plasma_centers.json")
     console.error("Failed to load plasma center data:", err);
   });
 
-// === Render map pins ===
+// === Render Center Markers ===
 function renderCenters(data, minIncentive = 0) {
   centerMarkers.forEach(marker => map.removeLayer(marker));
   centerMarkers = [];
@@ -94,9 +87,33 @@ function renderCenters(data, minIncentive = 0) {
   });
 }
 
-// === Incentive filter event ===
-document.getElementById("filter").addEventListener("change", (e) => {
-  const min = parseInt(e.target.value) || 0;
-  renderCenters(plasmaData, min);
+// === Incentive Filter ===
+const filterDropdown = document.getElementById("filter");
+if (filterDropdown) {
+  filterDropdown.addEventListener("change", (e) => {
+    const min = parseInt(e.target.value) || 0;
+    renderCenters(plasmaData, min);
+  });
+}
+
+// === Notifications ===
+const modal = document.createElement("div");
+modal.id = "notificationModal";
+modal.classList.add("hidden");
+modal.innerHTML = `<img src="assets/Special-Offer-Biolife.png" alt="Special Offer from BioLife">`;
+document.body.appendChild(modal);
+
+const notificationBtn = document.getElementById("notificationBtn");
+const bubble = document.querySelector(".notification-bubble");
+
+if (notificationBtn) {
+  notificationBtn.addEventListener("click", () => {
+    bubble.style.display = "none";
+    modal.classList.remove("hidden");
+  });
+}
+
+modal.addEventListener("click", () => {
+  modal.classList.add("hidden");
 });
 
