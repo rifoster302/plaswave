@@ -16,17 +16,11 @@
   <header>
     <img src="assets/PlasWave Logo.png" alt="PlasmaPal Logo" class="logo" />
     <h1>PlasWave Beta</h1>
-  </header>       
-
-  <section id="controls">
-    <label for="filter">💰 Filter by incentive:</label>
-    <select id="filter">
-      <option value="0">All centers</option>
-      <option value="100">At least $100</option>
-      <option value="500">At least $500</option>
-      <option value="900">At least $900</option>
-    </select>
-  </section>
+    <div class="header-icons">
+      <img src="assets/eligibility-badge.png" alt="Eligible Donor" class="eligibility-badge hidden" id="userStatusBadge" />
+      <button id="profileBtn" class="profile-btn">👤</button>
+    </div>
+  </header>
 
   <main>
     <div id="map"></div>
@@ -41,5 +35,75 @@
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   ></script>
   <script src="script.js"></script>
+
+  <!-- Inject Modal HTML -->
+  <script>
+    // === Inject Modal HTML ===
+    const modalHTML = `
+      <div id="locationModal" class="modal-overlay">
+        <div class="modal-content">
+          <h2>📍 Allow Location Access</h2>
+          <p>PlasWave uses your location to find nearby donation centers. This helps us show you real-time incentives near you.</p>
+          <button id="allowLocationBtn">Allow Location Access</button>
+        </div>
+      </div>
+      <div id="questionnaireModal" class="modal-overlay hidden">
+        <div class="modal-content">
+          <h2>🩸 Quick Eligibility Check</h2>
+          <form id="eligibilityForm">
+            <label>Are you 18 years old, or older?
+              <select required><option value="">--</option><option value="yes">Yes</option><option value="no">No</option></select>
+            </label>
+            <label>Are you over 110lbs?
+              <select required><option value="">--</option><option value="yes">Yes</option><option value="no">No</option></select>
+            </label>
+            <label>Any tattoos or piercings in the last 4 months?
+              <select required><option value="">--</option><option value="no">No</option><option value="yes">Yes</option></select>
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+    document.getElementById("allowLocationBtn").addEventListener("click", () => {
+      document.getElementById("locationModal").classList.add("hidden");
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          position => {
+            const userLat = position.coords.latitude;
+            const userLon = position.coords.longitude;
+            map.setView([userLat, userLon], 12);
+            L.circleMarker([userLat, userLon], {
+              radius: 6,
+              fillColor: "#f4f4f4",
+              color: "#0e2e1e",
+              weight: 2,
+              fillOpacity: 0.9
+            }).addTo(map).bindPopup("📍 You are here");
+          },
+          err => console.warn("Geolocation failed")
+        );
+      }
+      // Show questionnaire after geolocation prompt
+      document.getElementById("questionnaireModal").classList.remove("hidden");
+    });
+
+    document.getElementById("eligibilityForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const selects = e.target.querySelectorAll("select");
+      const answers = Array.from(selects).map(sel => sel.value);
+
+      if (answers[0] === "yes" && answers[1] === "yes" && answers[2] === "no") {
+        alert("Great! You're likely eligible to donate. Let's find you a center.");
+        document.getElementById("questionnaireModal").classList.add("hidden");
+        document.getElementById("userStatusBadge").classList.remove("hidden");
+      } else {
+        alert("You may not currently be eligible to donate plasma. Please check with a donation center for full guidelines.");
+      }
+    });
+  </script>
 </body>
 </html>

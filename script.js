@@ -5,9 +5,9 @@ const map = L.map('map').setView([38.89511, -77.03637], 11);
 
 // Add tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
-
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);  
+  
 // === Location Permission Modal ===
 setTimeout(() => {
   if (confirm("🔍 PlasWave would like to access your device’s location to help you find the closest plasma donation centers. Do you want to allow this?")) {
