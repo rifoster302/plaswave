@@ -33,7 +33,7 @@ setTimeout(() => {
     }
   }
 }, 500);
-
+// === I used ChatGPT to help me write this segment. I understood how to proceed if the user allowed geolocation, but I was unsure how to handle the case where they denied it. ChatGPT suggested using a default location (Washington, DC) and provided a fallback using the IP address. I implemented the geolocation part and commented out the IP fallback to avoid a 403 error without a token. ===
 // === Optional IP fallback (commented out to avoid 403 error unless token provided) ===
 // fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE")
 //   .then(res => res.json())

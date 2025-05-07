@@ -1,3 +1,4 @@
+<!-- I wrote the json file in tandem with ChatGPT. Once I had written the strcture of the file and had entered a list of donation sites, I had AI replicate my process to generate more sites for the list. I added the location-specific urls, naming convention, and incentive information to those sites and personally wrote the rest.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,7 @@
   <!-- Location & Eligibility Modals -->
   <div id="locationModal" class="modal-overlay">
     <div class="modal-content">
-      <h2>📍 Allow Location Access</h2>
+      <h2> Allow Location Access</h2>
       <p>PlasWave uses your location to find nearby donation centers. This helps us show you real-time incentives near you.</p>
       <button id="allowLocationBtn">Allow Location Access</button>
     </div>
@@ -37,7 +38,7 @@
 
   <div id="questionnaireModal" class="modal-overlay hidden">
     <div class="modal-content">
-      <h2>🩸 Quick Eligibility Check</h2>
+      <h2> Quick Eligibility Check</h2>
       <form id="eligibilityForm">
         <label>Are you 18 years old, or older?
           <select required><option value="">--</option><option value="yes">Yes</option><option value="no">No</option></select>
@@ -65,10 +66,11 @@
   </div>
 
   <!-- Scripts -->
+   <!-- I wrote and rewrote the scripts over a dozen times, and had ChatGPT help me debug my code.-->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="script.js"></script>
   <script>
-    // 📍 Location permission
+    //  Location permission
     document.getElementById("allowLocationBtn").addEventListener("click", () => {
       document.getElementById("locationModal").classList.add("hidden");
       if (navigator.geolocation) {
@@ -91,7 +93,7 @@
       document.getElementById("questionnaireModal").classList.remove("hidden");
     });
 
-    // 🩸 Eligibility logic
+    //  Eligibility logic
     document.getElementById("eligibilityForm").addEventListener("submit", (e) => {
       e.preventDefault();
       const selects = e.target.querySelectorAll("select");
@@ -105,7 +107,7 @@
       }
     });
 
-    // 🔔 Notification popup logic
+    // Notification popup logic
     const notifBtn = document.getElementById("notificationBtn");
     const notifModal = document.getElementById("notificationModal");
     const notifBubble = document.querySelector(".notification-bubble");

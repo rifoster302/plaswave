@@ -37,7 +37,7 @@
           "lat": 38.9345,
           "lon": -76.8896,
           "incentive": "$100 for all new donors, up to $700 first month",
-          "signup": "https://www.cslplasma.com/find-a-donation-center"
+          "signup": "https://www.cslplasma.com/center/525"
     },
     {
           "name": "B Positive Plasma – Riverdale",
@@ -69,7 +69,7 @@
               "lat": 39.2947,
               "lon": -76.7142,
               "incentive": "$725 for eight donations, valid through 5/11/2025",
-              "signup": "https://www.biolifeplasma.com/registration"
+              "signup": "https://www.biolifeplasma.com/locations/maryland/baltimore"
             },
             {
               "name": "CSL Plasma – Halethorpe",
@@ -78,14 +78,6 @@
               "lon": -76.6358,
               "incentive": "$100 for all new donors, up to $700 first month",
               "signup": "https://www.cslplasma.com/find-a-donation-center"
-            },
-            {
-              "name": "BioLife Plasma Services – Baltimore (Taylor Ave)",
-              "address": "919 Taylor Ave, Baltimore, MD 21286",
-              "lat": 39.4049,
-              "lon": -76.5835,
-              "incentive": "$725 for eight donations, valid through 5/11/2025",
-              "signup": "https://www.biolifeplasma.com/registration"
             },
             {
                "name": "BioLife Plasma Services – Newark, DE",
@@ -317,7 +309,7 @@
                 "lat": 40.0906,
                 "lon": -74.9614,
                 "incentive": "$100 for all new donors, up to $700 first month",
-                "signup": "https://www.cslplasma.com/"
+                "signup": "https://www.cslplasma.com/center/145"
               },
               {
                 "name": "CSL Plasma – Olney",
@@ -325,7 +317,7 @@
                 "lat": 40.0342,
                 "lon": -75.1254,
                 "incentive": "$100 for all new donors, up to $700 first month",
-                "signup": "https://www.cslplasma.com/"
+                "signup": "https://www.cslplasma.com/center/147"
               },
               {
                 "name": "CSL Plasma – Hamilton Township",
@@ -333,7 +325,7 @@
                 "lat": 40.1898,
                 "lon": -74.7020,
                 "incentive": "$100 for all new donors, up to $700 first month",
-                "signup": "https://www.cslplasma.com/"
+                "signup": "https://www.cslplasma.com/center/199"
               },
               {
                 "name": "Octapharma Plasma – Whitehall",
