@@ -91,7 +91,7 @@ main {
 }
 
 #map {
-  height: calc(100vh - 120px);
+  height: min(100vh, 700px); 
   width: 100%;
   z-index: 1;
   filter: brightness(0.85) contrast(1.05);
@@ -299,6 +299,11 @@ footer {
   .logo {
     margin-bottom: 0;
   }
+
+  #map {
+    min-height: 500px;
+  }
 }
+
 
 
