@@ -100,7 +100,7 @@ if (filterDropdown) {
 const modal = document.createElement("div");
 modal.id = "notificationModal";
 modal.classList.add("hidden");
-modal.innerHTML = `<img src="assets/Special-Offer-Biolife.png" alt="Special Offer from BioLife">`;
+modal.innerHTML = `<img src="assets/PlasWave-FAQ1.png" alt="PlasWave FAQ">`;
 document.body.appendChild(modal);
 
 const notificationBtn = document.getElementById("notificationBtn");

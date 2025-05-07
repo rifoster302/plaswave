@@ -68,7 +68,7 @@
               "address": "5421 Baltimore National Pike, Baltimore, MD 21229",
               "lat": 39.2947,
               "lon": -76.7142,
-              "incentive": "Up to $700 for new donors",
+              "incentive": "$725 for eight donations, valid through 5/11/2025",
               "signup": "https://www.biolifeplasma.com/registration"
             },
             {
@@ -80,11 +80,11 @@
               "signup": "https://www.cslplasma.com/find-a-donation-center"
             },
             {
-              "name": "BioLife Plasma Services – Baltimore",
+              "name": "BioLife Plasma Services – Baltimore (Taylor Ave)",
               "address": "919 Taylor Ave, Baltimore, MD 21286",
               "lat": 39.4049,
               "lon": -76.5835,
-              "incentive": "Up to $750 for new donors, first month. $100 referral bonus.",
+              "incentive": "$725 for eight donations, valid through 5/11/2025",
               "signup": "https://www.biolifeplasma.com/registration"
             },
             {
@@ -92,7 +92,7 @@
                "address": "1319 Churchmans Rd, Newark, DE 19713",
                "lat": 39.6802,
                "lon": -75.6590,
-               "incentive": "Up to $900 for new donors",
+               "incentive": "$700 for eight donations, valid through 5/11/2025",
                "signup": "https://www.biolifeplasma.com/locations/delaware/newark"
             },
             {
@@ -148,7 +148,7 @@
                 "address": "919 Taylor Ave, Towson, MD 21286",
                 "lat": 39.3847204,
                 "lon": -76.579062,
-                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "incentive": "$725 for eight donations, valid through 5/11/2025",
                 "signup": "https://www.biolifeplasma.com/locations/maryland/towson"
               },
               {
@@ -156,7 +156,7 @@
                 "address": "125 W College Ave Ste C, Salisbury, MD 21804",
                 "lat": 38.3482928,
                 "lon": -75.5985157,
-                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "incentive": "$675 for eight donations, valid through 5/11/2025",
                 "signup": "https://www.biolifeplasma.com/locations/maryland/salisbury"
               },
               {
@@ -164,7 +164,7 @@
                 "address": "6200 Baltimore Ave, Riverdale Park, MD 20737",
                 "lat": 38.9634236,
                 "lon": -76.9398947,
-                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "incentive": "$450 for first five visits, valid through 5/11/2025",
                 "signup": "https://www.biolifeplasma.com/locations/maryland/riverdale-park"
               },
               {
@@ -172,7 +172,7 @@
                 "address": "8702 Staples Mill Rd, Henrico, VA 23228",
                 "lat": 37.6317311,
                 "lon": -77.5086914,
-                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "incentive": "$650 for 8 donations, valid through 5/11/2025",
                 "signup": "https://www.biolifeplasma.com/locations/virginia/richmond"
               },
               {
@@ -180,7 +180,7 @@
                 "address": "1076A W Mercury Blvd, Hampton, VA 23666",
                 "lat": 37.0424047,
                 "lon": -76.3856707,
-                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "incentive": "$600 for 8 donations, valid through 5/11/2025",
                 "signup": "https://www.biolifeplasma.com/locations/virginia/hampton"
               },
               {
@@ -188,7 +188,7 @@
                 "address": "4731 Valley View Blvd NW, Roanoke, VA 24012",
                 "lat": 37.2991098,
                 "lon": -79.9569522,
-                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "incentive": "$750 for 8 donations, valid through 5/11/2025",
                 "signup": "https://www.biolifeplasma.com/locations/virginia/roanoke"
               },
               {
@@ -196,7 +196,7 @@
                 "address": "269 Lucy Dr, Harrisonburg, VA 22801",
                 "lat": 38.424411,
                 "lon": -78.84813,
-                "incentive": "New donors can earn up to $800 in the first month (varies by location).",
+                "incentive": "$700 for 8 donations, valid through 5/11/2025",
                 "signup": "https://www.biolifeplasma.com/locations/virginia/harrisonburg"
               },
               {
@@ -294,14 +294,6 @@
                 "lon": -75.5051,
                 "incentive": "Up to $75 for new donors, up to $550 first month",
                 "signup": "https://www.octapharmaplasma.com/plasma-donation/wilmington-de-2070/"
-              },
-              {
-                "name": "BioLife Plasma Services – Dover",
-                "address": "1234 Bay Rd, Dover, DE 19901",
-                "lat": 39.1295,
-                "lon": -75.5071,
-                "incentive": "Up to $900 for new donors",
-                "signup": "https://www.biolifeplasma.com/locations/delaware/dover"
               },
               {
                 "name": "CSL Plasma – Wilmington",

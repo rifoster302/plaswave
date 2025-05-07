@@ -243,7 +243,7 @@ footer {
   justify-content: center;
 }
 
-/* 📣 Notification Modal Image */
+/* Notification Modal Image */
 #notificationModal {
   position: fixed;
   top: 0;
@@ -285,7 +285,7 @@ footer {
   .header-title {
     font-size: 1.8rem;
     font-weight: 600;
-    margine-left: -0.5rem;
+    margin-left: -0.5rem;
   }
 
   .header-icons {
