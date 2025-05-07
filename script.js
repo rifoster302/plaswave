@@ -8,31 +8,52 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-// === Ask for Geolocation Permission ===
-setTimeout(() => {
-  if (confirm("🔍 PlasWave would like to access your location to show nearby plasma centers. Allow?")) {
+// === Custom Pin ===
+const customGreenPin = L.icon({
+  iconUrl: 'assets/phthalo-pin-glow.png',
+  iconSize: [30, 45],
+  iconAnchor: [15, 45],
+  popupAnchor: [0, -40],
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+  shadowSize: [41, 41]
+});
+
+// === Ask for Geolocation Permission (Mobile-safe) ===
+const allowLocationBtn = document.getElementById("allowLocationBtn");
+if (allowLocationBtn) {
+  allowLocationBtn.addEventListener("click", () => {
+    document.getElementById("locationModal").classList.add("hidden");
+
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         pos => {
           const userLat = pos.coords.latitude;
           const userLon = pos.coords.longitude;
 
-          map.setView([userLat, userLon], 12);
+          map.setView([userLat, userLon], 13);
 
           L.circleMarker([userLat, userLon], {
-            radius: 6,
-            fillColor: "#f4f4f4",
-            color: "#0e2e1e",
+            radius: 10,
+            fillColor: "#FFD700", // bright gold for visibility
+            color: "#000",
             weight: 2,
-            fillOpacity: 0.9
-          }).addTo(map).bindPopup("📍 You are here");
+            fillOpacity: 1
+          }).addTo(map)
+            .bindPopup("📍 You are here")
+            .bringToFront();
+
+          document.getElementById("questionnaireModal").classList.remove("hidden");
         },
-        err => console.warn("Geolocation failed:", err),
+        err => {
+          console.warn("Geolocation failed:", err);
+          alert("We couldn't access your location. You can still explore centers manually.");
+          document.getElementById("questionnaireModal").classList.remove("hidden");
+        },
         { enableHighAccuracy: true, timeout: 10000, maximumAge: 300000 }
       );
     }
-  }
-}, 500);
+  });
+}
 // === I used ChatGPT to help me write this segment. I understood how to proceed if the user allowed geolocation, but I was unsure how to handle the case where they denied it. ChatGPT suggested using a default location (Washington, DC) and provided a fallback using the IP address. I implemented the geolocation part and commented out the IP fallback to avoid a 403 error without a token. ===
 // === Optional IP fallback (commented out to avoid 403 error unless token provided) ===
 // fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE")
@@ -44,16 +65,6 @@ setTimeout(() => {
 //   .catch(() => {
 //     console.warn("IP geolocation failed, using DC default.");
 //   });
-
-// === Custom Pin ===
-const customGreenPin = L.icon({
-  iconUrl: 'assets/phthalo-pin-glow.png',
-  iconSize: [30, 45],
-  iconAnchor: [15, 45],
-  popupAnchor: [0, -40],
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-  shadowSize: [41, 41]
-});
 
 // === Load Center Data ===
 fetch("dmv_plasma_centers.json")
@@ -116,4 +127,3 @@ if (notificationBtn) {
 modal.addEventListener("click", () => {
   modal.classList.add("hidden");
 });
-
