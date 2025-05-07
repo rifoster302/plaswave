@@ -33,7 +33,7 @@ if (allowLocationBtn) {
           map.setView([userLat, userLon], 13);
 
           L.circleMarker([userLat, userLon], {
-            radius: 10,
+            radius: 8,
             fillColor: "#FFD700", // bright gold for visibility
             color: "#000",
             weight: 2,
